@@ -1,0 +1,25 @@
+#!/bin/sh
+
+file=$(readlink -f "$1")
+dir=${file%/*}
+base="${file%.*}"
+basename="${file##*/}"
+basename="${basename%.*}"
+
+loc="$base".md
+[ -f "$loc" ] && st -e nvim "$loc" +'cd %:p:h'
+
+loc="$base".mom
+[ -f "$loc" ] && st -e nvim "$loc" +'cd %:p:h'
+
+loc="$base".tex
+[ -f "$loc" ] && st -e nvim "$loc" +'cd %:p:h'
+
+loc="$dir"/../"$basename".md
+[ -f "$loc" ] && st -e nvim "$loc" +'cd %:p:h'
+
+loc="$dir"/../"$basename".mom
+[ -f "$loc" ] && st -e nvim "$loc" +'cd %:p:h'
+
+loc="$dir"/../"$basename".tex
+[ -f "$loc" ] && st -e nvim "$loc" +'cd %:p:h'
