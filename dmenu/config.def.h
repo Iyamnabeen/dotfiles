@@ -7,11 +7,17 @@ static const char *fonts[] = {
 	"monospace:size=10"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const int vertpad       = 16;        /* vertical padding */
+static const int sidepad       = 16;        /* horizontal padding */
+static char normfgcolor[]      = "#bbbbbb";
+static char normbgcolor[]      = "#222222";
+static char selfgcolor[]       = "#e617b6";
+static char selbgcolor[]       = "#4f4746";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemeNorm] = { normfgcolor, normbgcolor },
+	[SchemeSel] = { selfgcolor,  selbgcolor },
+	[SchemeOut] = { "#000000", selfgcolor },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
