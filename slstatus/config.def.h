@@ -1,16 +1,12 @@
-/*
-  _                                   _                     
- (_)                                 | |                    
-  _ _   _  __ _ _ __ ___  _ __   __ _| |__   ___  ___ _ __  
- | | | | |/ _` | '_ ` _ \| '_ \ / _` | '_ \ / _ \/ _ \ '_ \ 
- | | |_| | (_| | | | | | | | | | (_| | |_) |  __/  __/ | | |
- |_|\__, |\__,_|_| |_| |_|_| |_|\__,_|_.__/ \___|\___|_| |_|
-     __/ |   ##slstatus`                                               
-    |___/                                                   
-*/
+/* See LICENSE file for copyright and license details. */
 
+/* interval between updates (in ms) */
 const unsigned int interval = 1000;
+
+/* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
+
+/* maximum output string length */
 #define MAXLEN 2048
 
 /*
@@ -67,11 +63,5 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	//{ datetime, "%s",           "%F %T" },
-	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
-       /* { run_command, "^c#ed2f2f^   %s |", "light | cut -b -2" },
-	{ run_command, "墳%4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ cpu_perc, "^c#e639c0^ [CPU  %s%%]   ", NULL	      }*/
-	{ ram_perc, "^c#e639c0^ [RAM  %s%%] ", NULL	      },
-	{ datetime, "^c#9920ba^ %s  ",           "%a %b %r" },
+	{ datetime, "%s",           "%F %T" },
 };
