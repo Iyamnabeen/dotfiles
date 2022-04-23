@@ -2,4 +2,4 @@
 
 ##screenshot
 
-![scrot](https://raw.githubusercontent.com/Iyamnabeen/.dotfiles/main/assets/ok.png)
+![scrot](https://raw.githubusercontent.com/Iyamnabeen/.dotfiles/main/walls/ok.png)
