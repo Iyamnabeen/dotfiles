@@ -1,0 +1,11 @@
+alias \
+	yt="yt-dlp --embed-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner" \
+	gcl="git clone --depth=1" \
+    elis="nvim ~/.config/shell/aliasrc" \
+    vim="nvim" \
+    sudo="doas" \
+    ls="exa"
+    setwall="feh --no-fehbg --bg-fill" \
+    wtf="wtf -dog -KERNEL Hardened -DE haxor -OS arch" \
