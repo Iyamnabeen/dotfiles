@@ -1,5 +1,0 @@
-#!/bin/sh
-
-dir=${1%/*}
-
-setsid -f st -d "$dir"
