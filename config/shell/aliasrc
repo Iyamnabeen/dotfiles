@@ -1,12 +1,11 @@
-alias wtf='wtf -dog -KERNEL Hardened -DE haxor -OS arch'
-alias zathura='swallow zathura'
-alias sxiv='swallow sxiv'
-alias mpv-mus='mpv --no-video'
-alias mpv-vid='swallow mpv'
-alias sudo='doas'
-alias ../../../='...'
-alias setwall='feh --no-fehbg --bg-fill'
-alias ls='ls --color'
-alias yt='swallow yt'
-alias ping='ping nsa.gov'
-alias gcl='git clone --depth=1'
+alias \
+	yt="yt-dlp --embed-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner" \
+	gcl="git clone --depth=1" \
+    elis="nvim ~/.config/shell/aliasrc" \
+    vim="nvim" \
+    sudo="doas" \
+    ls="exa"
+    setwall="feh --no-fehbg --bg-fill" \
+    wtf="wtf -dog -KERNEL Hardened -DE haxor -OS arch" \
